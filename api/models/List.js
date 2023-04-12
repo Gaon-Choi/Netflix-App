@@ -14,4 +14,4 @@ const ListSchema = new mongoose.Schema(
 
 // 테이블명: List
 // 스키마는 위에서 만든 ListSchema를 참조하겠다.
-module.export = mongoose.model("List", ListSchema);
+module.exports = mongoose.model("List", ListSchema);

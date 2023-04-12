@@ -21,4 +21,4 @@ const MovieSchema = new mongoose.Schema(
 
 // 테이블명: Movie
 // 스키마는 위에서 만든 MovieSchema를 참조하겠다.
-module.export = mongoose.model("Movie", MovieSchema);
+module.exports = mongoose.model("Movie", MovieSchema);

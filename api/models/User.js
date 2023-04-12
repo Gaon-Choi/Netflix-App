@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
-    pasword: { type: String, required: true },
+    password: { type: String, required: true },
     profilePic: { type: String, default: "" },
     isAdmin: { type: Boolean, default: false },
   },
@@ -15,4 +15,4 @@ const UserSchema = new mongoose.Schema(
 
 // 테이블명: User
 // 스키마는 위에서 만든 userSchema를 참조하겠다.
-module.export = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", UserSchema);
